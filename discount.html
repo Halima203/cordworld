@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <header class="header">
+		<a href="#" class="logo"> CordWorld </a>
+		<nav class="navbar">
+			
+			<a href="index.html">Products</a>
+			<a href="discount.html">Discount</a>
+			<a href="popular.html">Bestseller</a>
+			<a href="contact.html">Contact</a>
+			<a href="about.html">AboutUs</a>
+			
+		</nav>
+
+		<div class="icons">
+			
+			<div id="cart-btn"   class="fa fa-shopping-cart"><span id="cart-count">0</span></div>
+			 
+		</div>
+		
+		<div class="hamburger" id="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</header>
+<div class="heading">
+		<h1>Prime members save 20% at checkout</h1>
+	</div>
+     <section class="home" id="home">
+		<div class="slides-container">
+			<div class="slide active">
+             
+				<div class="content">
+					
+					<h3>Multi Circle Wallhanging</h3>
+                    
+                    <span>$11.40</span><br>
+                    <h4 class="line-through">$14.95</h4><br>
+					<a  onclick="addToCart('Multi Circle Wallhanging',11.40)"  class="btn">Add to cart</a>
+				</div>
+				<div class="img">
+					<img decoding="async" src="./img/wall2.jpg" alt="">
+				</div>
+			</div>
+			<div class="slide">
+				<div class="content">
+					
+					<h3>Feather Dream-Catcher</h3>
+                    
+                    <span>$6.74</span>
+                   <h4 class="line-through">$14.95</h4><br>
+					<a  onclick="addToCart('Feather Dream-Catcher ',6.74)"  class="btn">Add to cart</a>
+				</div>
+				<div class="img">
+					<img decoding="async"src="./img/dream4.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="content">
+					
+					<h3>Cord Plant Hanger </h3>
+                   
+                    <span>$9.29</span><br>
+                    <h4 class="line-through">$14.95</h4><br>
+					<a  onclick="addToCart('Cord Plant Hanger',9.29 )"  class="btn">Add to cart</a>
+				</div>
+				<div class="img">
+					<img decoding="async"src="./img/plant1.jpg">
+				</div>
+			</div>
+
+		</div>
+		<div id="next-slide" class="fa fa-angle-right" onclick="next()"></div>
+		<div id="prev-slide" class="fa fa-angle-left" onclick="next()"></div>
+	</section> 
+
+	<section class="banner-container">
+           
+		<div class="banner">
+			<img decoding="async"src="./img/coaster5.jpg" alt="">
+			<div class="content">
+         
+				<h3>Cup Coaster</h3><br>
+				<span>$10.50</span>
+                <h4 class="line-through">$15.95</h4>
+				<a  onclick="addToCart('Cup Coaster',10.50)"  class="btn">Add to cart</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<img decoding="async"src="./img/leaf4.jpg" alt="">
+			<div class="content">
+				
+				<h3>Leaf Wallhanging </h3>
+                
+                <span>$8.36</span><br>
+                <h4 class="line-through">$14.95</h4>
+				<a  onclick="addToCart('Leaf Wallhanging  ',8.36)"  class="btn">Add to cart</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<img decoding="async"src="./img/plant2.jpg" alt="">
+			<div class="content">
+				
+				<h3>Plant Hanger </h3>
+                
+                <span>$11.05</span>
+                <h4 class="line-through">$14.95</h4>
+				<a  onclick="addToCart('Plant Hanger',11.05)"  class="btn">Add to cart</a>
+                
+			</div>
+		</div>
+
+        <div class="banner">
+			<img decoding="async"src="./img/wall3.jpg" alt="">
+			<div class="content">
+				
+				<h3>Wall Mat</h3>
+               
+                <span>$9.76</span>
+                <h4 class="line-through">$15.95</h4>
+				<a  onclick="addToCart('Wall Mat',9.76)"  class="btn">Add to cart</a>
+                
+			</div>
+		</div>
+
+        <div class="banner">
+	      <img decoding="async"src="./img/wall4.jpg" alt="">
+			<div class="content">
+				
+				<h3>Off-white Wallhanging</h3>
+                
+                <span>$7.50</span>
+                <h4 class="line-through">$11.50</h4>
+				<a  onclick="addToCart('Off-white Wallhanging',7.50)"  class="btn">Add to cart</a>
+                
+			</div>
+		</div>
+
+        <div class="banner">
+			<img decoding="async"src="./img/bag4.jpg" alt="">
+			<div class="content">
+				
+				<h3>Macrame Bag </h3>
+                
+                <span>$8.46</span>
+                <h4 class="line-through">$12.95</h4>
+				<a  onclick="addToCart('Macrame Bag ',8.46)"  class="btn">Add to cart</a>
+                
+			</div>
+		</div>
+
+        <div class="banner">
+			<img decoding="async"src="./img/bag5.jpg" alt="">
+			<div class="content">
+				
+				<h3>Small-Pattern Bag </h3>
+               
+                <span>$9.55</span>
+                <h4 class="line-through">$11.00</h4>
+				<a  onclick="addToCart('Small-Pattern Bag ',9.55)"  class="btn">Add to cart</a>
+                
+			</div>
+		</div>
+
+	</section> 
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p id="total-price">Total:$ 0</p>
+      <button id="checkout-btn">Checkout</button>
+      <button id="close-cart">Close</button>
+    </div>
+  </div>
+
+    <section class="credit">created by <span>&#169 2025Halima</span></section>
+
+	<script src="cart.js" defer data-deferred="1"></script>
+    <script src="book.js" defer data-deferred="1"></script>
+
+</body>
+</html>
