@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reg1.css">
+</head>
+<body>
+     <header class="header">
+		<a href="#" class="logo"> Bookworm </a>
+		<nav class="navbar">
+			<a href="home.html">Home</a>
+			<a href="reg1.html">Registration</a>
+			<a href="login.html">Login</a>
+			
+		</nav>
+
+		<div class="icons">
+			<div id="cart-btn" onclick="displayCart()"  class="fa fa-shopping-cart">Cart</div>
+			 <a href="login.html"><div id="login-btn" class="fa fa-user">Login</div></a>
+			 <a href="pagereg.html"><div id="search-btn" >Registration</div></a>
+			
+		</div>
+		
+		<div class="hamburger" id="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</header>
+    <div class="container" id="app">
+    <h1>Login</h1>
+    
+      <input type="text" id="loginUser" placeholder="Username or Email" required >
+      <input type="password" id="loginPass" placeholder="Password" required>
+      <button onclick="login()">Login</button>
+      <div class="link" >Don't have an account? <a href="reg1.html"> Register</a></div> 
+      
+      <div class="message" id="loginMsg"></div>
+      
+
+
+      <!-- <h2>Welcome, ${username} 🎉</h2>
+      <button onclick="logout()">Logout</button> -->
+    </div>
+       <script src="cart.js" defer data-deferred="1"></script>
+      <script src="reg1.js" defer data-deferred="1"></script>
+</body>
+</html>
